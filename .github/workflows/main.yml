@@ -7,11 +7,3 @@ jobs:
     - uses: actions/checkout@v3
     - name: example
       run: echo "ciao patate"
-    - name: Set up JDK 1.8
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'temurin'
-        java-version: '8.0.332+9'
-        cache: 'maven'
-    - name: Build with Maven
-      run: mvn -B install --file pom.xml
